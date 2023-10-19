@@ -1,0 +1,109 @@
+{
+  "burgers": [
+    {
+      "id": 1,
+      "name": "Texas BBQ Burger",
+      "description": "8 oz patty with smoked BBQ sauce, lettuce, tomatoes, onions, pickles & melted blue cheese",
+      "restaurant_name": "77 Burger",
+      "address": "77 Pearl St, New York, NY 10004",
+      "price": "13.60",
+      "rating": "2",
+      "category": "Burger"
+    },
+    {
+      "id": 2,
+      "name": "White Horse Burger",
+      "description": "6 oz Burger, American Cheese, Shreed Iceberg Lettuce, Tomato, Diced Onion, Pickle, and Special Sauce",
+      "restaurant_name": "White Horse Tavern",
+      "address": "25 Bridge St, New York, NY 1004 ",
+      "price": "11",
+      "rating": "2",
+      "category": "Burger"
+    },
+    {
+      "id": 3,
+      "name": "Signature Burger",
+      "description": "Gochujang aioli, American cheese, miso-caramelized onions, and garlic Parmesan butter",
+      "restaurant_name": "Extra Sauce",
+      "address": "100 Pearl St, New York, NY 10004",
+      "price": "13",
+      "rating": "2",
+      "category": "Burger"
+    },
+    {
+      "id": 4,
+      "name": "Underdog Burger",
+      "description": "American Cheese, Lettuce, Tomato, and Onion",
+      "restaurant_name": "Underdog",
+      "address": "55 Stone St, New York, NY 10004",
+      "price": "18",
+      "rating": "2",
+      "category": "Burger"
+    }
+  ],
+  "pastas": [
+    {
+      "id": 5,
+      "name": "Gnocchi Con Pesto",
+      "description": "Fresh Gnocchi in a Basil Pesto ",
+      "restaurant_name": "Antica Ristorante",
+      "address": "8 Stone St, New York, NY 10004",
+      "price": "19",
+      "rating": "3",
+      "category": "Pasta"
+    },
+    {
+      "id": 6,
+      "name": "Fusilli",
+      "description": "Fusilli with Garlic Oil & Broccoli",
+      "restaurant_name": "The Grotto Pizzeria & Ristorante",
+      "address": "69 New St, New York, NY 10004",
+      "price": "9.25",
+      "rating": "1",
+      "category": "Pasta"
+    },
+    {
+      "id": 7,
+      "name": "Pasta Primavera",
+      "description": "Onions, Mushrooms, Broccoli, spinach, and peppers. Choice of penne, ziti, spaghetti, or fettuccine",
+      "restaurant_name": "Pizza Etalia",
+      "address": "20 Beaver St, New York, NY 10004 ",
+      "price": "14.95",
+      "rating": "2",
+      "category": "Pasta"
+    }
+  
+  ],
+  "pizzas": [
+    {
+      "id": 8,
+      "name": "Rapini",
+      "description": "Napoletana Pizza with fior di latte, Ricotta, Broccoli Rabe, Spicy Calabrian Chilis, and Pecorino",
+      "restaurant_name": "Inatteso Pizzabar",
+      "address": "28 West St, New York, NY 10004 ",
+      "price": "25",
+      "rating": "2",
+      "category": "Pizza"
+    },
+    {
+      "id": 9,
+      "name": "Hot Honey",
+      "description": "Sicilian Style with Tomato Sauce, Sopresatta, Provlone, and Mike's Hot Honey on a Sesame Seed Crust",
+      "restaurant_name": "Siena Pizza & Cannoli",
+      "address": "14 Rector St, New York, NY 10004",
+      "price": "30",
+      "rating": "3",
+      "category": "Pizza"
+    },
+    {
+      "id": 10,
+      "name": "Dirty Bird",
+      "description": "Creamy Parm-Romano Suace, Shredded Mozzarella, Juicy Chicken, Jalapeno Peppers, Tangy Buffalo Suace, Cool Ranch Dressing, and Crumbled Blue Cheese ",
+      "restaurant_name": "&pizza",
+      "address": "63 Wall St, New York, NY 10005",
+      "price": "13.49",
+      "rating": "1",
+      "category": "Pizza"
+    }
+  ]
+}
