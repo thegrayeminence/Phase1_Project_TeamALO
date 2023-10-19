@@ -39,26 +39,6 @@
       "price": "18",
       "rating": "2",
       "category": "Burger"
-    },
-    {
-      "name": "Flatburger 2.0",
-      "description": "meat, bun, lettuce, tomato",
-      "restaurant_name": "Goodburger",
-      "address": "123 My St.",
-      "price": "12",
-      "category": "Burger",
-      "rating": "3",
-      "id": 5
-    },
-    {
-      "name": "Flatburger 2.0",
-      "description": "Banana",
-      "restaurant_name": "GoodBurger",
-      "address": "123 My St.",
-      "price": "12",
-      "category": "Burger",
-      "rating": "3",
-      "id": 6
     }
   ],
   "pastas": [
@@ -93,31 +73,31 @@
       "category": "Pasta"
     },
     {
-      "name": "Banana bread",
-      "description": "Banana",
-      "restaurant_name": "",
-      "address": "",
-      "price": "",
-      "category": "Pasta",
+      "id": 8,
+      "name": "Call Me Alfredo",
+      "description": "Homemade Fettucine with Alfredo Sauce",
+      "restaurant_name": "Call Me Pasta!",
+      "address": "241 Pearl St, New York, NY 10038",
+      "price": "11.95",
       "rating": "3",
-      "id": 8
+      "category": "Pasta"
     },
     {
-      "name": "",
-      "description": "",
-      "restaurant_name": "",
-      "address": "",
-      "price": "",
+      "name": "Penne Scampi",
+      "description": "Tossed with shrimp, chili & garlic cream sauce",
+      "restaurant_name": "Parm Battery Park City",
+      "address": "250 Vesey St, New York, NY 10080",
+      "price": "21",
       "category": "Pasta",
       "rating": "3",
       "id": 9
     },
     {
-      "name": "",
-      "description": "",
-      "restaurant_name": "",
-      "address": "",
-      "price": "",
+      "name": "Risotto",
+      "description": "Italian Risotto with wild mushrooms and truffle oil",
+      "restaurant_name": "Antica Ristorante",
+      "address": "8 Stone St, New York, NY 10004",
+      "price": "27",
       "category": "Pasta",
       "rating": "3",
       "id": 10
