@@ -1,4 +1,6 @@
 # Phase-1-Project
+
+## For instructors: after cloning the project please set up the 'lohan' branch
 #   1. Instructions about the project
 #   2. Be clear and concise for people who don't have computer background
 #   3. npx json-server --watch db.json (creates a template json file for you)
