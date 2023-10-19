@@ -1,183 +1,215 @@
-/* html {
-    margin: 0;
-    padding: 0;
-} */
-
 body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    justify-content: center;
-    background: radial-gradient(circle, white, lightblue); /* Radial gradient from white to light blue */
+  margin: 0;
+  height: 100vh; 
+  /* display: flex; */
+  /* align-items: center; */
+  justify-content: center;
+  background: radial-gradient(circle, white, lightblue); /* Radial gradient from white to light blue */
 }
 
-
-
-/* NAV ITEMS STYLING BEGIN */
 header {
-    width: 100%;
+  width: 100%;
 }
+
 nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0; /* Ensure no padding */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; 
 }
 
 .nav-item {
-    position: relative;
-    flex: 1;
-    max-width: 50%; 
-    padding: 0; /* Ensure no padding */
-    margin: 0; /* Ensure no margin */
+  position: relative;
+  flex: 1;
+  max-width: 50%; 
+  padding: 0; /* Ensure no padding */
+  margin: 0; /* Ensure no margin */
 }
 
 .nav-item a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: auto; /* Adjusted to auto */
-    width: 100%; /* Ensuring it takes full width */
-    padding: 0; /* Ensure no padding */
-    margin: 0; /* Ensure no margin */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto; /* Adjusted to auto */
+  width: 100%; /* Ensuring it takes full width */
+  padding: 0; /* Ensure no padding */
+  margin: 0; /* Ensure no margin */
 }
 
 .nav-images {
-    position: relative;
-    height: auto; /* Adjusted to auto for responsive design */
-    width: 100%; /* Ensuring it takes full width */
+  position: relative;
+  height: auto; /* Adjusted to auto for responsive design */
+  width: 100%; /* Ensuring it takes full width */
 }
 
 .nav-item img {
-    height: auto;
-    width: 100%;
-    max-height: 30vh; 
-    object-fit: cover;
-    padding: 0; /* Ensure no padding */
-    margin: 0; /* Ensure no margin */
+  height: auto;
+  width: 100%;
+  max-height: 30vh; 
+  object-fit: cover;
+  padding: 0; /* Ensure no padding */
+  margin: 0; /* Ensure no margin */
 }
 
 .overlay-text {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: white;
-    background-color: rgba(0,0,0,0.5);
-    text-align: center;
-    padding: 10px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .nav-item:hover .overlay-text {
-    opacity: 1;
-}
-/* NAV STYLING END */
-
-
-
-/* MIDDLE SECTION STYLING BEGIN */
-
-/*Beginning of: TABS and TABS CONTAINER ELEMENTS: Instructions and Menu*/
-#site_middle{
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content:space-evenly;
-
-}
-.leftcontainer {
-    left: 0;
-    top: auto;
-    background-color: #ffffff;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-  }
-  .tabTitles {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .tabTitles h3 {
-    background-color: #e4e9fd;
-    text-align: center;
-    padding: 15px 0;
-    cursor: pointer;
-    font-weight: 600;
-    font-family: sans-serif;
-  }
-  .tabcontent {
-    background-color: #ffffff;
-    padding: 50px 40px;
-  }
-  .tabcontent h4 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #000224;
-    font-weight: 600;
-    font-family: sans-serif;
-  }
-  .tabcontent p, li {
-    text-align: justify;
-    line-height: 1.9;
-    letter-spacing: 0.4px;
-    color: #202238;
-    font-family: sans-serif;
-  }
-  .tabcontent div {
-    display: none;
-  }
-  .tabcontent .active {
-    display: block;
-  }
-  .tabTitles .active {
-    background-color: #ffffff;
-    color: #4d5bf9;
-  }
-  /*END OF: TABS and TABS CONTAINER ELEMENTS: Instructions and Menu*/
-
-
-
-
-
-
-#map-container {
-    width: 50%; /* Adjust width as per requirement */
-    height: 400px; /* Adjust height as per requirement */
-    position: fixed; 
-    top: 0; 
-    right: 0; /* Positions the map on the right side of the page */
-    z-index: 1000; 
-    border: none;
+  opacity: 1;
 }
 
+h1 {
+  text-align: center;
+  margin-top: 0;
+  padding: 20px;
+  font-family: sans-serif;
+  font-size: 2em;
+}
 
+h3#instructions{
+  font-family: sans-serif;
+  text-align: center;
+  width: auto;
+  font-size: 1.5em;
+  color: black;
 
+}
 
+#menu-items, #menu-items li {
+  font-family: sans-serif;
+  text-align: left;
+  width: auto;
+  font-size: 1.1em;
+  color: black;
+}
+#dish-items,#dish-items li  {
+  font-family: sans-serif;
+  text-align: left;
+  width: auto;
+  font-size: 1.25em;
+  color: black;
+  transition: color 0.5s ease-in-out;
+  padding-bottom: 5%;
+  /* display: list-item; */
+}
+#food-description-list, #food-description-list li{
 
-/* FORM STYLING CODE */
-form {
-     display: flex;
-    flex-direction:column;
-   
-    
-  }
-  label {padding-top: 1%;
-  }
+  font-family: sans-serif;
+  text-align: left;
+  width: auto;
+  font-size: 1.25em;
+  color: black;
+  padding: 1%;
+  margin-left: 4%;
+  margin-right: -1%;
+}
 
-  #form-container {
-    max-width: 50vw;
-    max-height: 10vh;
-    padding:3vh;
-    margin-left: 25vw;
-    margin-right: auto;
-  }
+li{padding-top: 5%;
+}
 
-  input[type = "submit"]{
-    margin-top: 1%;
-    margin-bottom: 5%;
+#dish-items li:hover{
+  color: aqua;
+} 
 
-  }
+#instructions-container {
+  margin-left: 2%;
+  padding: 3%;
+  max-width: 33vw;
+  border-width: 5px;
+  border-style:solid;
+  border-color: black;
+  margin-bottom: auto;
+}
 
+#menu-items-img-container{
 
  
+  padding: 0%;
+  margin-left: 1%;
+  margin-right: 2%;
+  max-width: 60vw;
+  border-width: 5px;
+  border-style:solid;
+  border-color: black;
+  margin-bottom: auto;
+  
+  
+}
 
+form {
+   display: flex;
+  flex-direction:column;
+
+  }
+
+#new-food-form input {
+  border-radius: 75px;
+  padding-bottom: 5px;
+  margin-left: 3%;
+}
+
+#new-food-form label {
+  padding: 5px;
+}
+
+#new-address::placeholder{
+  text-align: center;
+}
+
+#form-container {
+  max-width: 50vw;
+  max-height: 10vh;
+  padding:3vh;
+  margin-left: 25vw;
+  margin-right: auto;
+}
+
+input[type = "submit"]{
+  margin-top: 1%;
+  margin-bottom: 5%;
+
+}
+
+#middle-section {
+
+  display: flex;
+  
+}
+
+#menu-items-img-container{
+ padding-left: 0vw;
+ padding-right: 0vw;
+
+
+}
+
+#map-container {
+  width: 50%; 
+  height: 400px; 
+  position: fixed; 
+  top: 0; 
+  right: 0; 
+  z-index: 1000; 
+  border: none;
+}
+
+.stars {
+  color: red;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 2px black;
+}
+
+h4 {
+  font-size: 25px;
+  text-align: left;
+}

@@ -3,7 +3,6 @@
         <meta charset="UTF-8">
         <title> FOOD APP PROJECT</title>
         <link rel="stylesheet" type="text/css" href="./style.css"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script  defer src="index.js"></script> 
     </head>
 
@@ -14,7 +13,6 @@
 
     <body>
         <header>
-            <!-- NAV ELEMENTS -->
             <nav>
                 <div class="nav-item">
                     <a href="#">
@@ -42,99 +40,38 @@
                 </div>
             </nav>
         </header>
-        <!-- END OF: Nav Elements -->
 <hr>
+<h1 id = "site-title">Favorite Local Dishes</h1>
 
 
-
-<!-- <h1 id = "site-title">Favorite Local Dishes</h1> -->
-
-
-<section id = "site_middle">
-
-  <!--Beginning of: TABS and TABS CONTAINER ELEMENTS: Instructions/Menu Items -->
-  <div class="leftcontainer" id = "left_container">
-    <div class="tabTitles">
-      <h3 class="active" id = "instructionsTabTitle">Instructions</h3>
-      <h3 id="menuItemsTabTitle">Menu Items</h3>
-    </div>
-    <div class="tabcontent">
-      <div class="active">
-        <h4>Site Instructions</h4>
-        <p id = "instructionsContent">
-        To access food items, click on a category up-top <br>
-        To access dish details, click on a food item <br>
-        To add a new dish, fill out the form below with pertinent information <br>
-        Rating System: <br>
-              ٭ : High-quality cooking, worth a stop. <br>
-              ٭٭ : Excellent cuisine, worth a detour. <br>
-              ٭٭٭ : Exceptional cuisine, worth a special journey.
-        </p>
-    </div>
-    <div>
-        <h4>Menu Items</h4>
-            <ul id = "dish-items"> 
-                <li> Food Name: </li>
-                <li> Food Description: </li>
-                <li> Restaurant Name: </li>
-                <li> Restaurant Address: </li>
-                <li> Item Price: </li>
-                <li> Category: </li>
-            </ul>
-    </div>
-    </div>
-  </div>
-  <!--END OF: TABS/TABS CONTAINER ELEMENTS: Instructions/Menu Items -->
-
-
-<!-- RIGHT CONTAINER BEGIN -->
-<div class="rightcontainer" id="right_container" >
-    <div id = "dish_description_container">
-    <ul id = "food-description-list" style="display: none";>
-        <li class="dishlist" name="dish-name"> Food Name: </li>
-        <li class="dishlist" name="dish-description"> Food Description: </li>
-        <li class="dishlist" name="restaurant-name"> Restaurant Name: </li>
-        <li class="dishlist" name="restaurant-address"> Restaurant Address: </li>
-        <li class="dishlist" name="dish-price"> Item Price: </li>
-        <li  class="dishlist" name="dish-type"> Category: </li>
-        <li  class="dishlist" name="dish-rating"> Rating: </li>
-    </ul>
-    </div>
-    <div class="siteLogo">
-        <img src="./src/Logo_for_website.gif" alt="Your Image" />
-    </div>
-    <div id="map" style="display: none"></div>
-</div>
-
-
-
-    <!-- MENU ITEMS AND INSTRUCTIONS -->
-
-    <!-- OLD!!!!!!! -->
-
-<!-- <div id = "instructions-container">
-        <h3 id = "instructions">Site Navigation: Overview/Instructions</h1>
+<section id = "middle-section">
+<div id = "instructions-container">
+        <h3 id = "instructions">Site Navigation: Instructions</h1>
         <ol id = "menu-items">
             <li> To access food items, click on a category up-top</li>
             <li> To access dish details, click on a food item</li>
             <li> To add a new dish, fill out the form below with pertinent information</li>
             <li> Rating System: <br>
-                ٭<br>High-quality cooking, worth a stop. <br>
-                ٭٭<br> Excellent cuisine, worth a detour. <br>
-                ٭٭٭<br> Exceptional cuisine, worth a special journey. </li>
+                <br>
+                ٭ = If you find yourself at this restaurant- get this
+                <br>
+                ٭٭ = Worth going to the restaurant just for this
+                <br>
+                ٭٭٭ = Best you've had in NYC </li>
         </ol>
-        <ul id = "dish-items" style="display: none;"> 
-             <li> Food Name: </li>
+        <ul id = "dish-items" style="display: none;">
+            <!-- <li> Food Name: </li>
             <li> Food Description: </li>
             <li> Restaurant Name: </li>
             <li> Restaurant Address: </li>
             <li> Item Price: </li>
-            <li> Category: </li>
+            <li> Category: </li> -->
         </ul>
-    </div>  -->
+    </div> 
 
-    <!-- <div id="menu-items-img-container">
+    <div id="menu-items-img-container">
         <span>
+        <!-- <h2 id = "menu-items-description">Welcome to the website</h2> -->
         <ul id = "food-description-list" style="display: none";>
             <li class="dishlist" name="dish-name"> Food Name: </li>
             <li class="dishlist" name="dish-description"> Food Description: </li>
@@ -144,14 +81,18 @@
             <li  class="dishlist" name="dish-type"> Category: </li>
             <li  class="dishlist" name="dish-rating"> Rating: </li>
         </ul>
-    </span> -->
-<!--END OF: MENU ITEMS AND INSTRUCTIONS -->
+    </span>
 
+    <span class="image-box">
+        <img src="./src/Logo_for_website.gif" alt="Your Image" />
+    </span>
+    
+    </div> 
+    <div id="map" style="display: none"></div>
 </section>
 
 
-<!-- FORM ELEMENT BEGIN -->
-<!-- <section>
+<section>
    <div id = "form-container">
     <form id = "new-food-form">
         <h4>Add New Food</h4>
@@ -162,7 +103,7 @@
         <label for = "restaurant_name">Restaurant Name</label>
         <input type= "text" name = "restaurant_name" id = "new-restaurant" />
         <label for = "address">Restaurant Address</label>
-        <input type= "text" name = "address" id = "new-address" />
+        <input type= "text" name = "address" id = "new-address" placeholder="Street, City, State ZipCode"/>
         <label for = "price">Item Price</label>
         <input type="text" name = "price" id = "new-price" />
         <label for = "food_type">Food Type</label>
@@ -181,7 +122,7 @@
         <input type = "submit" value = "submit">
     </form>
    </div>
-</section>   -->
+</section>  
 
 
 
