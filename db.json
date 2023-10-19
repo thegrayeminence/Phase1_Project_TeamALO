@@ -104,6 +104,36 @@
       "price": "13.49",
       "rating": "1",
       "category": "Pizza"
+    },
+    {
+      "id": 4,
+      "name": "Arrabbiata",
+      "description": "Mozzarella & Spicy Peppers",
+      "restaurant_name": "Adrienne's PizzaBar",
+      "address": "54 Stone St, New York, NY 10004",
+      "price": "29",
+      "rating": "2",
+      "category": "Pizza"
+    },
+    {
+      "id": 5,
+      "name": "Steak Stromboli Stuffed Pizza",
+      "description": "Steak, Onions, and Mozzarella",
+      "restaurant_name": "Pizza Etalia",
+      "address": "20 Beaver St, New York, NY 10004",
+      "price": "39.95",
+      "rating": "3",
+      "category": "Pizza"
+    },
+    {
+      "id": 6,
+      "name": "BBQ Chicken Pizza",
+      "description": "Topped with BBQ Sauce, Mozzarella, and Chicken Meat",
+      "restaurant_name": "Pranzo Pizza & Pasta",
+      "address": "44 Water St, New York, NY 10004",
+      "price": "31",
+      "rating": "2",
+      "category": "Pizza"
     }
   ]
 }
