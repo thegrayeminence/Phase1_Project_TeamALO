@@ -4,18 +4,19 @@
 } */
 
 body {
+    padding: 0;
     margin: 0;
-    height: 100vh; 
-    /* display: flex; */
-    /* align-items: center; */
+    box-sizing: border-box;
     justify-content: center;
     background: radial-gradient(circle, white, lightblue); /* Radial gradient from white to light blue */
 }
 
+
+
+/* NAV ITEMS STYLING BEGIN */
 header {
     width: 100%;
 }
-
 nav {
     display: flex;
     justify-content: center;
@@ -72,79 +73,88 @@ nav {
 .nav-item:hover .overlay-text {
     opacity: 1;
 }
+/* NAV STYLING END */
 
-h1 {
+
+
+/* MIDDLE SECTION STYLING BEGIN */
+
+/*Beginning of: TABS and TABS CONTAINER ELEMENTS: Instructions and Menu*/
+#site_middle{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content:space-evenly;
+
+}
+.leftcontainer {
+    left: 0;
+    top: auto;
+    background-color: #ffffff;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  }
+  .tabTitles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .tabTitles h3 {
+    background-color: #e4e9fd;
     text-align: center;
-    margin-top: 0;
-    padding: 20px;
+    padding: 15px 0;
+    cursor: pointer;
+    font-weight: 600;
     font-family: sans-serif;
-    font-size: 2em;
-}
-
-h3#instructions{
+  }
+  .tabcontent {
+    background-color: #ffffff;
+    padding: 50px 40px;
+  }
+  .tabcontent h4 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #000224;
+    font-weight: 600;
     font-family: sans-serif;
-    text-align: left;
-    width: auto;
-    font-size: 1.5em;
-    color: black;
-
-}
-
-#menu-items, #menu-items li {
+  }
+  .tabcontent p, li {
+    text-align: justify;
+    line-height: 1.9;
+    letter-spacing: 0.4px;
+    color: #202238;
     font-family: sans-serif;
-    text-align: left;
-    width: auto;
-    font-size: 1.1em;
-    color: black;
-}
-#dish-items,#dish-items li  {
-    font-family: sans-serif;
-    text-align: left;
-    width: auto;
-    font-size: 1.25em;
-    color: black;
-    transition: color 0.5s ease-in-out;
-    padding-bottom: 5%;
-    /* display: list-item; */
-}
-#food-description-list, #food-description-list li{
+  }
+  .tabcontent div {
+    display: none;
+  }
+  .tabcontent .active {
+    display: block;
+  }
+  .tabTitles .active {
+    background-color: #ffffff;
+    color: #4d5bf9;
+  }
+  /*END OF: TABS and TABS CONTAINER ELEMENTS: Instructions and Menu*/
 
-    font-family: sans-serif;
-    text-align: left;
-    width: auto;
-    font-size: 1.25em;
-    color: black;
-    padding: 5%;
-}
 
-li{padding-top: 5%;
-}
 
- #dish-items li:hover{
-    color: aqua;
-} 
 
-#instructions-container {
-    margin-left: 4%;
-    padding: 5%;
-    max-width: 33vw;
-    border-width: 5px;
-    border-style:solid;
-    border-color: black;
+
+
+#map-container {
+    width: 50%; /* Adjust width as per requirement */
+    height: 400px; /* Adjust height as per requirement */
+    position: fixed; 
+    top: 0; 
+    right: 0; /* Positions the map on the right side of the page */
+    z-index: 1000; 
+    border: none;
 }
 
-#menu-items-img-container{
 
-   
-    padding: 5%;
-    margin-left: 5%;
-    max-width: 60vw;
-    border-width: 5px;
-    border-style:solid;
-    border-color: black;
-    
-}
 
+
+
+/* FORM STYLING CODE */
 form {
      display: flex;
     flex-direction:column;
@@ -168,36 +178,6 @@ form {
 
   }
 
-  #middle-section {
 
-    display: flex;
-    
-  }
+ 
 
-  #menu-items-img-container{
-   padding-left: 5vw;
-   padding-right: 5vw;
-
-
-  }
-  /* #image-box{
-    max-height: 50vh;
-  } */
-
-
-  #map-container {
-    width: 50%; /* Adjust width as per requirement */
-    height: 400px; /* Adjust height as per requirement */
-    position: fixed; 
-    top: 0; 
-    right: 0; /* Positions the map on the right side of the page */
-    z-index: 1000; 
-    border: none;
-}
-
-/* stars symbol on dish item details */
-.stars {
-    color: red;
-    font-size: 1.5em;
-    text-shadow: 1px 1px 2px black;
-}
