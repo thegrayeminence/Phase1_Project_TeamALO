@@ -39,6 +39,26 @@
       "price": "18",
       "rating": "2",
       "category": "Burger"
+    },
+    {
+      "name": "Flatburger 2.0",
+      "description": "meat, bun, lettuce, tomato",
+      "restaurant_name": "Goodburger",
+      "address": "123 My St.",
+      "price": "12",
+      "category": "Burger",
+      "rating": "3",
+      "id": 5
+    },
+    {
+      "name": "Flatburger 2.0",
+      "description": "Banana",
+      "restaurant_name": "GoodBurger",
+      "address": "123 My St.",
+      "price": "12",
+      "category": "Burger",
+      "rating": "3",
+      "id": 6
     }
   ],
   "pastas": [
@@ -71,8 +91,37 @@
       "price": "14.95",
       "rating": "2",
       "category": "Pasta"
+    },
+    {
+      "name": "Banana bread",
+      "description": "Banana",
+      "restaurant_name": "",
+      "address": "",
+      "price": "",
+      "category": "Pasta",
+      "rating": "3",
+      "id": 8
+    },
+    {
+      "name": "",
+      "description": "",
+      "restaurant_name": "",
+      "address": "",
+      "price": "",
+      "category": "Pasta",
+      "rating": "3",
+      "id": 9
+    },
+    {
+      "name": "",
+      "description": "",
+      "restaurant_name": "",
+      "address": "",
+      "price": "",
+      "category": "Pasta",
+      "rating": "3",
+      "id": 10
     }
-  
   ],
   "pizzas": [
     {
