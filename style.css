@@ -1,9 +1,4 @@
-/* html {
-    margin: 0;
-    padding: 0;
-} */
-
-
+/* title of the site */
 #site-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 4em;
@@ -11,6 +6,7 @@
     padding-top: 60px;
 }
 
+/* targets all textboxes */
 input[type=text] {
     padding: 7px 7px;
     border: 3px solid #a4a4a4;
@@ -18,6 +14,7 @@ input[type=text] {
     border-radius: 10px;
 }
 
+/* targets 'select boxes' (Food Type, Rating) */
 select {
     width: 100%;
     padding: 13px 12px;
@@ -27,6 +24,7 @@ select {
     border-radius: 15px;
   }
 
+/* targets everything within the 'body' tag */
 body {
     margin: 0;
     height: 100vh; 
@@ -36,15 +34,12 @@ body {
     background-color: white;
 }
 
-
-#new-food-form {
-    /* width: 75%; */
-}
-
+/* targets elements in 'header' tag (three food images) */
 header {
     width: 100%;
 }
 
+/* targets nav (within header) (three food images) */
 nav {
     display: flex;
     justify-content: center;
@@ -52,6 +47,7 @@ nav {
     padding: 0; /* Ensure no padding */
 }
 
+/* targets elements with class 'nav items' (three food images) within nav element */
 .nav-item {
     position: relative;
     flex: 1;
@@ -60,6 +56,7 @@ nav {
     margin: 0; /* Ensure no margin */
 }
 
+/* selects all <a> tags, within elements with 'nav-item' class */
 .nav-item a {
     display: flex;
     align-items: center;
@@ -70,12 +67,14 @@ nav {
     margin: 0; /* Ensure no margin */
 }
 
+/* selects all elements with class 'nav-images' (3 divs containing images src's) */
 .nav-images {
     position: relative;
     height: auto; /* Adjusted to auto for responsive design */
     width: 100%; /* Ensuring it takes full width */
 }
 
+/* selects all <img> tags, within elements with nav-item class (3 image src's) */
 .nav-item img {
     height: auto;
     width: 100%;
@@ -85,6 +84,7 @@ nav {
     margin: 0; /* Ensure no margin */
 }
 
+/* selects all items with class 'overlay-text' (image overlay text) */
 .overlay-text {
     position: absolute;
     bottom: 0;
@@ -98,10 +98,12 @@ nav {
     transition: opacity 0.3s ease-in-out;
 }
 
+/* selects overlay text, that apears when mouse hovers over items with class 'nav-item' ('pasta', 'pizza', 'burger') */
 .nav-item:hover .overlay-text {
     opacity: 1;
 }
 
+/* selects all h1 elements (site title) */
 h1 {
     text-align: center;
     margin-top: 0;
@@ -110,6 +112,7 @@ h1 {
     font-size: 2em;
 }
 
+/* selects h3 elements with id 'instructions' */
 h3#instructions{
     font-family: 'Montserrat', sans-serif;
     text-align: left;
