@@ -112,7 +112,7 @@ function getBurgers(data) {
           
         })
          //auto loads first menu item on menu list
-        if(data.length > 0) {displayDishDetails(data[0])};
+        if(data.length > 0) {displayDishDetails(data[0]); };
        
     })
     
@@ -150,7 +150,7 @@ function getDishDetails (data) {
             iframe.width = '600';
             iframe.height = '450';
             iframe.style.border = '0';
-            iframe.loading = 'lazy';
+          //  iframe.loading = 'lazy';
             const location = encodeURIComponent(item.address); 
             iframe.src = `https://www.google.com/maps?q=${location}&output=embed`; 
             mapDiv.appendChild(iframe);       
@@ -225,3 +225,17 @@ formEl.addEventListener('submit', (event) => {
     formEl.reset();
 })
 
+function addMap (){
+
+    const mapDiv = document.getElementById('map');
+    mapDiv.innerHTML = ''; 
+    const iframe = document.createElement('iframe');
+    mapDiv.style.display = 'block';
+    iframe.width = '600';
+    iframe.height = '450';
+    iframe.style.border = '0';
+  //  iframe.loading = 'lazy';
+    const location = encodeURIComponent(item.address); 
+    iframe.src = `https://www.google.com/maps?q=${location}&output=embed`; 
+    mapDiv.appendChild(iframe);       
+}
